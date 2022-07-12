@@ -4,6 +4,41 @@
       "id": 1,
       "title": "API POST",
       "content": "content for my post"
+    },
+    {
+      "title": "Third post creation",
+      "content": "Some content",
+      "id": 2
+    },
+    {
+      "title": "Hmm",
+      "content": "???",
+      "id": 3
+    },
+    {
+      "title": "4",
+      "content": "Some content",
+      "id": 4
+    },
+    {
+      "title": "Add blog post 5",
+      "content": "Some funtent",
+      "id": 5
+    },
+    {
+      "title": "6?",
+      "content": "Oof",
+      "id": 6
+    },
+    {
+      "title": "7",
+      "content": "7",
+      "id": 7
+    },
+    {
+      "title": "8",
+      "content": "Please god",
+      "id": 8
     }
   ]
 }

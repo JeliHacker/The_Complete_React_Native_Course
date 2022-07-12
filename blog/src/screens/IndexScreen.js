@@ -7,7 +7,26 @@ const IndexScreen = ({ navigation }) => {
   const { state, deleteBlogPost, getBlogPosts } = useContext(Context);
 
   useEffect(() => {
-    getBlogPosts();
+    getBlogPosts()
+
+    const listener = navigation.addListener('didFocus', () => {
+      getBlogPosts();
+    });
+
+    return () => {
+      listener.remove();
+    };
+    // -------------------------
+    // const unsuscribe = navigation.addListener('focus', () => {
+    //   getBlogPosts();
+    // });
+ 
+    // return unsuscribe;
+    // -------------------------
+    //console.log("poop")
+    //console.log(navigation.addListener('focus', () => getBlogPosts()))
+    //return navigation.addListener('focus', () => getBlogPosts())
+
   }, [])
 
   return (
